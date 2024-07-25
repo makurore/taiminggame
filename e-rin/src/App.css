@@ -1,0 +1,212 @@
+body{
+  overflow: hidden;
+  color: #000;
+  background-color: rgb(245, 133, 161);
+  overflow: hidden;
+}
+img{
+  height: 100vh;
+}
+div{
+  text-align: center;
+  position: absolute;
+}
+.body{
+  animation-name: fadeI   ;
+  opacity: 1;
+  animation-iteration-count:infinite;
+  animation-duration:1s ;
+}
+@keyframes fadeI {
+  0% {
+    
+  
+   margin-top: 1vh;
+  }
+  100% {
+    margin-top: 0px;
+    
+  }
+}
+.age{
+
+  opacity: 0;
+  
+}
+.age.active{
+  animation-name: fadeIn   ;
+  opacity: 1;
+  animation-iteration-count:infinite;
+  animation-duration:0.5s ;
+  z-index: 0;
+}
+.down{
+ 
+  opacity: 0;    
+  
+}
+.down.active{
+  animation-name: fadeIn ;
+  opacity: 1;    
+  animation-iteration-count:infinite;
+  animation-duration:0.5s ;
+  z-index: 0;
+}
+@keyframes fadeIn {
+  0% {
+    
+  margin-left: 0.5vh;
+   margin-top: 0.5vh;
+  }
+  100% {
+    margin-top: 0px;
+    
+  }
+}
+.gauge{
+  margin: 3vw  0vw 0 80vw;
+  width: 100px;
+  height: 90vh;
+  background-color: black;
+  overflow: hidden;
+}
+
+.in.active{
+  background-color: red;
+  width: 100px;
+  height: 90vh;
+  animation-name: timing ;    
+  animation-iteration-count:infinite;
+  animation-duration:0.5s ;
+  overflow: hidden;
+}
+@keyframes timing {
+  0% {
+    margin-top: 100vh;
+  }
+  100% {
+    margin-top: 0;
+    
+  }
+}
+.tuki{
+  margin-top: 30vw;
+  margin-left: 15vh;
+}
+.alertButton{
+  background-color: rgb(245, 133, 161);
+  width: 100vw;
+  height: 100vh;
+  z-index: 10000;
+  position: absolute;
+  
+}
+.alertButton.active{
+  z-index: 0;
+  opacity: 0;
+}
+button{
+  background-color: #fff;
+  padding: 10px 20px;
+
+  font-size: 30px;
+  margin-top: 40vh;
+
+  cursor:pointer;
+}
+.help{
+  height: 20vh;
+  width: 20vw;
+  margin-left: 52vw;
+  margin-top: -30vh;
+  font-size: 40px;
+  opacity: 1;
+}
+.help.active{
+  z-index: -2;
+  opacity: 0;
+}
+.e-rin{
+  height: 20vh;
+  width: 20vw;
+  margin-left: 53vw;
+ margin-top: -27vh;
+  font-size: 40px;
+  opacity: 1;
+}
+.e-rin.active{
+  z-index: -2;
+  opacity: 0;
+}
+.fukidasi img{
+  height: 20vw;
+  width: auto;
+  margin-left: 49vw;
+  margin-top: 5vh;
+  z-index: -1;
+}
+.mein.active{
+  z-index: -1;
+  opacity: 0;
+}
+.last{
+  margin: 0 0  0vh 45vw;
+  padding: 0 0 10vh 0;
+  z-index: -1;
+  opacity: 0;
+}
+.last.active{
+  z-index: 1;
+  opacity: 1;
+}
+.last button{
+  background-color: #fff;
+  padding: 40px 30px;
+  font-size: 30px;
+  margin-top: 40vh;
+  cursor:pointer;
+}
+.timing{
+  margin-top: 10vw;
+  margin-left: 20vw;
+  z-index:1000;
+  position: absolute;
+}
+.checkryou{
+  margin-left: 75vw;
+  opacity: 0;
+}
+.checknami{
+  opacity: 0;
+  margin-left: 75vw;
+}
+.checkge{
+  opacity: 0;
+  margin-left: 75vw;
+}
+.checkryou.active{
+  opacity: 1;
+}
+.checknami.active{
+  opacity: 1;
+}
+.checkge.active{
+  opacity: 1;
+}
+@media (max-width: 800px) {
+ h1{
+  font-size: 20px;
+  margin-top: 0;
+ }
+ button{
+  margin-top: 0;
+ }
+ .e-rin{
+  font-size: 20px;
+ margin-top: -40vh;
+ }
+ .help{
+  font-size: 20px;
+  margin-top: -40vh;
+ }
+}
